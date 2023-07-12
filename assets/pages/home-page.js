@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit';
 
-export class HomePage extends LitElement {
+export class homePage extends LitElement {
     static styles = [
         css`
             :host {
@@ -10,7 +10,7 @@ export class HomePage extends LitElement {
     ];
 
     render() {
-        return html``;
+        return html`<p>Barbearia Vanguarda</p>`;
     }
 }
-customElements.define('app-home-page', HomePage);
+customElements.define('app-home-page', homePage);
