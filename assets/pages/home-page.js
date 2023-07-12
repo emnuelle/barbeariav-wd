@@ -1,6 +1,6 @@
 import { LitElement, html, css } from 'lit';
 
-export class Logo extends LitElement {
+export class HomePage extends LitElement {
     static styles = [
         css`
             :host {
@@ -10,7 +10,7 @@ export class Logo extends LitElement {
     ];
 
     render() {
-        return html`logo`;
+        return html``;
     }
 }
-customElements.define('app-logo', Logo);
+customElements.define('app-home-page', HomePage);
