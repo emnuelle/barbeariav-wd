@@ -1,7 +1,8 @@
 (O arquivo deve ser apagado antes da entrega do projeto!!!)
 
 13/07/2023
-> Sempre exportar
+> Sempre exportar/linkar os arquivos
 > Prestar atenção se não a exportação está certa no html
 > Tudo que tem () é um função
 > Display Block (relacionado ao box model)
+> 
