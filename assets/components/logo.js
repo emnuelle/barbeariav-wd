@@ -4,16 +4,20 @@ export class Logo extends LitElement {
     static styles = [
         css`
             :host {
-                display: block;
                 width: 48px;
                 height: 48px;
                 flex-shrink: 0;
+
+                background-color: black;
+                -webkit-mask: url('../../images/logo.svg') no-repeat center;
+                mask: url('../../images/logo.svg') no-repeat center;
+
+                -webkit-mask-size: 100%;
+                mask-size:100%;
+
+                display: block;
             }
         `
     ];
-
-    render() {
-        return html`<img src="../../images/logo.svg" alt="Logo da barbearia Vanguarda" />`;
-    }
 }
 customElements.define('app-logo', Logo);
