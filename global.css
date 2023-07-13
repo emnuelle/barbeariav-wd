@@ -10,3 +10,7 @@
     --fonte-titulo: 'Exo', sans-serif;
     --fonte-corpo:  'Source Serif 4', serif;
 }
+
+body {
+    background-color: var(--tom-1);
+}

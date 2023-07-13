@@ -10,7 +10,7 @@ export class titulo extends LitElement {
 
                 text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
                 font-family: var(--fonte-titulo);
-                font-size: 48px;
+                font-size: 3rem;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 100%; /* 48px */
