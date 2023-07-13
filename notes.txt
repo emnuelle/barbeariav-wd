@@ -2,4 +2,5 @@
 
 13/07/2023
 > Sempre exportar
+> Prestar atenção se não a exportação está certa no html
 > 

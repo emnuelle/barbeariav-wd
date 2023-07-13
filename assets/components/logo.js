@@ -5,6 +5,9 @@ export class Logo extends LitElement {
         css`
             :host {
                 display: block;
+                width: 48px;
+                height: 48px;
+                flex-shrink: 0;
             }
         `
     ];
