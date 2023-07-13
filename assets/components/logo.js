@@ -10,7 +10,7 @@ export class Logo extends LitElement {
     ];
 
     render() {
-        return html`logo`;
+        return html`<img src="../../images/logo.svg" alt="Logo da barbearia Vanguarda" />`;
     }
 }
 customElements.define('app-logo', Logo);
