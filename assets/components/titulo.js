@@ -15,6 +15,11 @@ export class titulo extends LitElement {
                 font-weight: 700;
                 line-height: 100%; /* 48px */
             }
+            
+            ::slotted(*) {
+                font-size: inherit;
+                margin: 0;
+            }
         `,
   ];
 
