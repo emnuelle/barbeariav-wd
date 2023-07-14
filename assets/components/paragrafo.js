@@ -5,21 +5,22 @@ export class Paragrafo extends LitElement {
         css`
             :host {
                 display: block;
-                width: 270px;
-                height: 47px;
-                flex-shrink: 0;
                 color: var(--cor-secundaria, #665E57);
-                font-family: Source Serif 4;
-                font-size: 20px;
+                font-family: var(--fonte-corpo);
+                font-size: 1rem;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 100%; /* 20px */
+            }
+
+            p {
+                margin: 0;
             }
         `
     ];
 
     render() {
-        return html`Obtenha um estilo impecável, do cabelo à barba.`;
+        return html`<p>Parágrafo</p>`;
     }
 }
 customElements.define('app-paragrafo', Paragrafo);
