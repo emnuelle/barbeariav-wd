@@ -17,7 +17,11 @@ export class Quadro extends LitElement {
     ];
 
     render() {
-        return html`Obtenha um estilo impecável, do cabelo à barba.`;
+        return html`
+        <slot>
+            Coloque uma imagem
+        </slot>
+        `;
     }
 }
 customElements.define('app-quadro', Quadro);

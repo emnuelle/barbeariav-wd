@@ -10,4 +10,5 @@
 > No devtools a tag "#shadow-root (open)" pode indicar que o componente está certo
 > ctrl + espaço (ajuda com os atalhos)
 > website "mdn", p/ auxiliar com as formatações etc
+> A tag <slot> no documento js facilita muito, ajudam com os componetem que podem ser reautilizados e alterados pelo html
 > 
