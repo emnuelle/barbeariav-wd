@@ -7,3 +7,7 @@
 > Display Block (relacionado ao box model)
 
 14/07/2023
+> No devtools a tag "#shadow-root (open)" pode indicar que o componente está certo
+> ctrl + espaço (ajuda com os atalhos)
+> website "mdn", p/ auxiliar com as formatações etc
+> 
