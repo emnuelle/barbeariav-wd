@@ -20,7 +20,10 @@ export class Paragrafo extends LitElement {
     ];
 
     render() {
-        return html`<p>Parágrafo</p>`;
+        return html`
+            <slot>
+                <p>Parágrafo</p>
+            </slot>`;
     }
 }
 customElements.define('app-paragrafo', Paragrafo);
