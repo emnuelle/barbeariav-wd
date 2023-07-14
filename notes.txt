@@ -5,4 +5,5 @@
 > Prestar atenção se não a exportação está certa no html
 > Tudo que tem () é um função
 > Display Block (relacionado ao box model)
-> 
+
+14/07/2023
