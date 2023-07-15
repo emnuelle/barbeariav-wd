@@ -9,8 +9,8 @@ export class Logo extends LitElement {
                 flex-shrink: 0;
 
                 background-color: black;
-                -webkit-mask: url('../../images/logo.svg') no-repeat center;
-                mask: url('../../images/logo.svg') no-repeat center;
+                -webkit-mask: url('../../public/logo.svg') no-repeat center;
+                mask: url('../../public/') no-repeat center;
 
                 -webkit-mask-size: 100%;
                 mask-size:100%;
