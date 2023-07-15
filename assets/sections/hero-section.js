@@ -39,6 +39,10 @@ export class HeroSection extends LitElement {
                 height: 100%;
             }
 
+            app-paragrafo {
+                font-size: 1.25rem;
+            }
+
         `,
     ];
 
