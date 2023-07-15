@@ -1,19 +1,10 @@
 import { LitElement, html, css } from 'lit';
+import { section } from '../styles/section-style';
 
 export class HeroSection extends LitElement {
     static styles = [
+        section,
         css`
-            :host {
-                width: 100%;
-                height: 100%;
-
-                display: flex; 
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 4.375rem;
-            }
-
             section {
                 display: flex;
                 flex-direction: column;
@@ -43,6 +34,11 @@ export class HeroSection extends LitElement {
                 top: -39px;
             }
 
+            img {
+                width: auto;
+                height: 100%;
+            }
+
         `,
     ];
 
@@ -55,7 +51,9 @@ export class HeroSection extends LitElement {
                 <app-logo></app-logo>
             </app-titulo>
 
-            <app-quadro></app-quadro>
+            <app-quadro>
+                <img src="../../public/img1.png" alt="Imagem slider 1"/>
+            </app-quadro>
 
         </section>
 
