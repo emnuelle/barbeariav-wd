@@ -8,6 +8,7 @@ export * from './components/bolinhas'
 
 // Seções
 export * from './sections/hero-section'
+export * from './sections/a-barbearia-section'
 
 // Páginas
 export * from './pages/home-page'

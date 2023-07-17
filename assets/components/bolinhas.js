@@ -1,12 +1,11 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, css } from 'lit';
 
 export class Bolinhas extends LitElement {
     static styles = [
         css`
             :host {
-                width: 48px;
-                height: 48px;
-                flex-shrink: 0;
+                width: 100px;
+                height: 100px;
 
                 background-color: black;
                 -webkit-mask: url('../../public/bolinhas.svg') no-repeat center;
@@ -18,10 +17,5 @@ export class Bolinhas extends LitElement {
             }
         `
     ];
-
-    render() {
-        return html`
-        `;
-    }
 }
 customElements.define('app-bolinhas', Bolinhas);
