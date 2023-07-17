@@ -12,16 +12,10 @@ export class Botao extends LitElement {
                 border: 0;
                 justify-content: center;
                 align-items: center;
-                gap: 10px;
 
                 border-radius: 8px;
-                background: linear-gradient(
-                    0deg,
-                    rgba(255, 255, 255, 0.2) 0%,
-                    rgba(255, 255, 255, 0.2) 100%
-                ),
-                    var(--tom-2, #b38962);
-                    box-shadow: 0px 2px 4px 0px #665e57;
+                background-color: color-mix(in srgb, white 20%, var(--tom-2, #b38962));
+                box-shadow: 0px 2px 4px 0px #665e57;
 
                 /* tipografia */
                 
@@ -32,7 +26,14 @@ export class Botao extends LitElement {
                 font-size: 1rem;
                 font-style: normal;
                 font-weight: 700;
-                line-height: 10px;
+                line-height: normal;
+
+                transition: all 200ms;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: var(--tom-2, #b38962);
             }
         `
     ];
