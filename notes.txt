@@ -16,3 +16,9 @@
 > Caniuse.com, site que ajuda com medidas (ex custom elements)
 > Arquivos img o professor usou com sliderx, mas no meu ta imgx (pasta public)
 >
+
+
+
+
+
+!!!!!!!!!MPM RUN DEV PRA RODAR O SERVER!!!!!!!!!!
