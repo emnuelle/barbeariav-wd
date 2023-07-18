@@ -40,7 +40,7 @@ export class Bolinhas extends LitElement {
 
                 -webkit-mask-size: 100%;
                 mask-size:100%;
-                background-color: black;
+                background-color: var(--cor-bolinha, black);
             }
         `
     ];

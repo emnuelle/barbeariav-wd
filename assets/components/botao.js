@@ -18,7 +18,6 @@ export class Botao extends LitElement {
                 box-shadow: 0px 2px 4px 0px #665e57;
 
                 /* tipografia */
-                
                 color: var(--tom-3, #664e38);
                 text-align: center;
 
@@ -30,6 +29,7 @@ export class Botao extends LitElement {
 
                 transition: all 200ms;
                 cursor: pointer;
+                white-space: nowrap;
             }
 
             button:hover {
