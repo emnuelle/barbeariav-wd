@@ -7,7 +7,7 @@ export class Botao extends LitElement {
         display: block;
       }
 
-      ::slotted(button) {
+      ::slotted(button), button {
         width: inherit;
 
         display: inline-flex;
