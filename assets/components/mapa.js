@@ -3,7 +3,7 @@ import { LitElement, html, css } from 'lit';
 export class Mapa extends LitElement {
     static styles = [
         css`
-            * {
+            * , ::slotted(*) {
                 margin: 0;
 
             }
@@ -40,14 +40,14 @@ export class Mapa extends LitElement {
                 font-style: normal;
             }
 
-            .titulo{
+            .titulo, ::slotted(h2){
                 font-size: 1rem;
                 font-weight: 700;
                 line-height: normal;
                 letter-spacing: 0.64px;
             }
 
-            .subtitulo {
+            .subtitulo, ::slotted(h3) {
                 text-align: center;
                 font-size: .5rem;
                 font-weight: 400;
@@ -70,6 +70,10 @@ export class Mapa extends LitElement {
             .imagem{
                 width: 100%;
             }
+
+            ::slotted(img) {
+                width: 100%;
+            }
         `
     ];
 
@@ -77,18 +81,23 @@ export class Mapa extends LitElement {
         return html`
         
         <figure>
-            <img class="imagem" src="../../public/mapa-1.png" alt="imagem da sede barbearia vanguarda">
+            <slot name="imagem">
+                <img class="imagem" src="../../public/mapa-1.png" alt="imagem da sede barbearia vanguarda">
+            </slot>
         </figure>
 
         <address>
-            <h2 class="titulo">
-                Av. Marechal Tito 2960
-            </h2>
-
-            <h3 class="subtitulo" >
-            São Miguel Paulista, São Paulo
-            </h3>
-
+            <slot name="titulo">
+                <h2 class="titulo">
+                    Av. Marechal Tito 2960
+                </h2>
+            </slot>
+            
+            <slot name="subtitulo">
+                <h3 class="subtitulo" >
+                    São Miguel Paulista, São Paulo
+                </h3>
+            </slot>
         </address>
 
         `;
