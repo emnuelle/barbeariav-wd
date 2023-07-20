@@ -7,7 +7,7 @@ export class Botao extends LitElement {
         display: block;
       }
 
-      button {
+      ::slotted(button) {
         width: inherit;
 
         display: inline-flex;
@@ -61,7 +61,11 @@ export class Botao extends LitElement {
 
   render() {
     return html`
-      <button><slot name="icone"></slot> <slot> Pressione</slot></button>
+
+    <slot>
+      <button>pressione</button>
+    </slot>
+      
     `;
   }
 }
