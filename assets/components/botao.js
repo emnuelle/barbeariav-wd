@@ -10,7 +10,7 @@ export class Botao extends LitElement {
       ::slotted(button), button, ::slotted(a) {
         width: inherit;
 
-        display: inline-flex;
+        display: flex;
         padding: 5px 24px;
         border: 0;
         justify-content: flex-start;
@@ -42,7 +42,9 @@ export class Botao extends LitElement {
       }
 
       button:hover,
-      button:active {
+      button:active,
+      a:hover,
+      a:active {
         background-color: color-mix(
           in srgb,
           white 15%,

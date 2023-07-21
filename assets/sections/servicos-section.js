@@ -93,7 +93,7 @@ export class ServicosSection extends LitElement {
                     <app-paragrafo  >Corte</app-paragrafo>
                     <app-paragrafo class="descricao" >Social, degradê, surfista, militar, razor part, undercut</app-paragrafo> 
                 </article>
-                <app-botao> Ver mais </app-botao>
+                <app-botao><a href="serviços"> Ver mais </a></app-botao>
             </aside>
 
         </section>
@@ -109,3 +109,4 @@ export class ServicosSection extends LitElement {
     }
 }
 customElements.define('servicos-section', ServicosSection);
+    

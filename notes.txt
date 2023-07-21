@@ -20,6 +20,8 @@
 
 > Adc imagem do contos-section
 
+> ctrl + shift + p {wrap}  -> comando "wrap"
+
 
 
 
