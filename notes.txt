@@ -22,6 +22,7 @@
 
 > ctrl + shift + p {wrap}  -> comando "wrap"
 
+> shift + alt + f -> para formatar o codigo
 
 
 

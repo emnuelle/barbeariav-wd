@@ -23,6 +23,10 @@ export class Navbar extends LitElement {
             app-logo{
                 background-color: white;
             }
+
+            feather-icon {
+                cursor: pointer;
+            }
         `
     ];
 
