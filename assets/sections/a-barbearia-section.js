@@ -74,6 +74,10 @@ export class ABarbeariaSection extends LitElement {
                 width: 100%;
             }
 
+            app-botao {
+                display: var(--display-botao);
+            }
+
         `
     ];
 

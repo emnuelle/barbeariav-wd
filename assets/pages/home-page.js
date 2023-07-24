@@ -18,4 +18,4 @@ export class homePage extends LitElement {
         `;
     }
 }
-customElements.define('app-home-page', homePage);
+customElements.define('home-page', homePage);
