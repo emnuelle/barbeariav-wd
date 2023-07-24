@@ -1,4 +1,5 @@
 import { LitElement, html, css } from "lit";
+import { nav } from "../../main";
 
 export class MenuSection extends LitElement {
   static styles = [
@@ -12,12 +13,16 @@ export class MenuSection extends LitElement {
         display: flex;
         width: 100%;
         height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0;
         padding: 32px;
         box-sizing: border-box;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
         flex-shrink: 0;
+        border: 0;
 
         background-color: rgba(0, 0, 0, 40%);
         opacity: 0;
@@ -66,6 +71,12 @@ export class MenuSection extends LitElement {
 
       }
 
+      button {
+        padding: 0;
+        border: 0;
+        background: transparent;
+      }
+
       svg, 
       feather-icon {
         display: flex;
@@ -83,9 +94,13 @@ export class MenuSection extends LitElement {
         <app-logo></app-logo>
 
         <nav>
+
           <a href="">Unidades <feather-icon icon="map-pin"></feather-icon></a>
+
           <a href="">Contato <feather-icon icon="phone"></feather-icon></a>
+
           <a href="servicos">Serviços <feather-icon icon="scissors"></feather-icon></a>
+
           <a href="a-barberia">A Barbearia
           <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -97,8 +112,13 @@ export class MenuSection extends LitElement {
               />
             </svg>
           </a>
+
           <a href="/">Home <feather-icon icon="home"></feather-icon></a>
-          <feather-icon icon="x"></feather-icon>
+
+          <button @click=${nav.fechar} >
+            <feather-icon icon="x"></feather-icon>
+          </button>
+
         </nav>
       </dialog>
 

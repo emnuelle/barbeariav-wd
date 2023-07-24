@@ -7,7 +7,16 @@ document.addEventListener('DOMContentLoaded', function() {
     navbar = document.querySelector("app-navbar");
 
     dialog = document.querySelector('menu-section').shadowRoot.querySelector('dialog');
-})
+});
+
+export const nav = {
+  abrir: function () {
+    dialog.showModal()
+  }, 
+  fechar: function () {
+    dialog.close()
+  },
+}
 
 /* Navbar dinâmica ao scroll */
 let prevScrollpos = window.pageYOffset;

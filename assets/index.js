@@ -9,6 +9,7 @@ export * from './components/mapa'
 export * from './components/rodape'
 export * from './components/navbar'
 
+
 // Seções
 export * from './sections/hero-section'
 export * from './sections/a-barbearia-section'
@@ -16,6 +17,3 @@ export * from './sections/servicos-section'
 export * from './sections/contato-section'
 export * from './sections/unidades-section'
 export * from './sections/menu-section'
-
-// Páginas
-export * from './pages/home-page'
