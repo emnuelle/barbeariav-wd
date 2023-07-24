@@ -10,18 +10,27 @@ export class MenuSection extends LitElement {
 
       dialog{
         display: flex;
-        width: 360px;
-        height: 640px;
+        width: 100%;
+        height: 100%;
         padding: 32px;
         box-sizing: border-box;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
         flex-shrink: 0;
-        
-        background-color: black;
-        opacity: 0.6;
+
+        background-color: rgba(0, 0, 0, 40%);
+        opacity: 0;
         z-index: 110;
+        position: fixed;
+        pointer-events: none;
+        transition: opacity 300ms;
+
+      }
+
+      dialog[open] {
+        opacity: 1;
+        pointer-events: auto;
       }
 
       app-logo {
@@ -70,7 +79,7 @@ export class MenuSection extends LitElement {
   render() {
     return html`
 
-      <dialog open>
+      <dialog >
         <app-logo></app-logo>
 
         <nav>
