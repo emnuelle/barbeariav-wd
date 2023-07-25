@@ -17,4 +17,28 @@ export const section = css`
         position: relative;
         }
 
+        botton:hover,
+        botton:active,
+        a:hover,
+        a:active {
+            background-color: color-mix(
+                in srgb,
+                white 15%,
+                var(--button-background, -var(-tom-2))
+            );
+            color: var(--tom-1);
+        }
+
+        @media (min-width: 768px){
+            :host{
+                padding: 3rem;
+            }
+        }
+
+        @media (min-width: 1024px){
+            :host{
+                overflow: visible;
+            }
+        }
+
     `;
