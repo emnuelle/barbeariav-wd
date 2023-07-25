@@ -24,6 +24,6 @@
 
 > shift + alt + f -> para formatar o codigo
 
-
+> loading="lazy" } img (forma de carregar)
 
 !!!!!!!!!MPM RUN DEV PRA RODAR O SERVER!!!!!!!!!!

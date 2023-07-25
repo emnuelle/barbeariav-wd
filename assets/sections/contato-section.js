@@ -52,7 +52,7 @@ export class ContatoSectioon extends LitElement {
       <app-titulo> Entre em contato conosco</app-titulo>
 
       <app-quadro>
-        <img src="../../public/thumb-contato.png.png" alt="contato-thumb" />
+        <img loading="lazy" src="../../public/thumb-contato.png.png" alt="contato-thumb" />
       </app-quadro>
 
       <div>
