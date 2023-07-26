@@ -20,6 +20,8 @@ export class Navbar extends LitElement {
                 mix-blend-mode: difference;
                 color: white;
                 transition: top 1s;
+
+                pointer-events: none;
             }
 
             app-logo{
@@ -28,6 +30,7 @@ export class Navbar extends LitElement {
 
             feather-icon {
                 cursor: pointer;
+                pointer-events: auto;
             }
 
             @media (min-width: 768px) {

@@ -23,9 +23,12 @@ export const nav = {
   rolarPara: function (secao) {
     Router.go("/");
     router.ready.then(() => {
-      document.querySelector('home-page')
+      document
+      .querySelector('home-page')
       .shadowRoot.querySelector(secao)
       .scrollIntoView();
+
+      this.fechar()
     });
   }, 
   fechar: function () {
