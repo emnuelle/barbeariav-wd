@@ -53,6 +53,13 @@ export class Rodape extends LitElement {
                 text-decoration: none;
                 opacity: .9;
             }
+
+            @media (min-width: 1024px) {
+                :host {
+                    border-radius: 2rem 2rem 0 0;
+                    overflow: hidden;
+                }
+            }
         `
     ];
 

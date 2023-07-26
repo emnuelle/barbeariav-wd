@@ -48,6 +48,10 @@ export class ContatoSectioon extends LitElement {
         div {
           max-width: 80%;
         }
+
+        app-quadro {
+          width: 70vw;
+        }
       }
     `,
   ];

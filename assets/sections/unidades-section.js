@@ -30,6 +30,20 @@ export class UnidadesSection extends LitElement {
                 top: -56px;
             }
 
+            @media (min-width: 768px) {
+                app-paragrafo {
+                    width: 100%;
+                    max-width: 500px;
+                    text-align: center;
+                }
+
+                app-mapa {
+                    width: 400px;
+                    height: 300px;
+                }
+            }
+
+
         `
     ];
 
