@@ -24,6 +24,10 @@ export class Quadro extends LitElement {
                 :host {
                     aspect-ratio: 167/112;
                 }
+
+                app-quadro {
+                    width: 70%;
+                }
             }
 
         `

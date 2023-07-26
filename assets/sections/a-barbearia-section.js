@@ -122,6 +122,12 @@ export class ABarbeariaSection extends LitElement {
 
                 article {
                     width: 70%;
+
+                    border-image-source: linear-gradient(
+                        20deg, 
+                        rgba(102,78,56,0) 50%, 
+                        rgba(102,78,56,1) 100%
+                    );
                 }
 
             };

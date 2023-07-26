@@ -113,6 +113,12 @@ export class ServicosSection extends LitElement {
                 }
             }
 
+            @media (min-width:1024px) {
+                div {
+                    display: none;
+                }
+            }
+
         `
     ];
 

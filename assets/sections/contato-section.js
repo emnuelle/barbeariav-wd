@@ -37,6 +37,18 @@ export class ContatoSectioon extends LitElement {
         
         margin: 5px 8px 5px 0;
       }
+
+      @media (min-width: 760px) {
+        div {
+          flex-direction: row;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        div {
+          max-width: 80%;
+        }
+      }
     `,
   ];
 
