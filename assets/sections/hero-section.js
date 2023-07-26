@@ -76,7 +76,7 @@ export class HeroSection extends LitElement {
             </app-titulo>
 
             <app-quadro>
-            <swiper-container>
+            <swiper-container loop="true">
                 <swiper-slide>
                     <img loading="lazy" src="../../public/slider-1.jpg" alt="Imagem slider 1"/>
                 </swiper-slide>
