@@ -1,13 +1,11 @@
 import { LitElement, html, css } from 'lit';
+import { nav } from "../../main";
 
 export class Rodape extends LitElement {
     static styles = [
         css`
             :host {
                 display: block;
-
-                font-family: var(--fonte-titulo);
-                font-size: .75rem;
                 color: white;
 
             }
@@ -22,6 +20,7 @@ export class Rodape extends LitElement {
                 font-size: .5rem;
                 background-color: color-mix(in srgb, black 40%, var(--tom-3));
 
+                font-family: var(--fonte-titulo);
 
             }
 
@@ -48,10 +47,23 @@ export class Rodape extends LitElement {
                 opacity: .9;
             }
 
-            a {
+            a, button {
                 color: white;
                 text-decoration: none;
-                opacity: .9;
+                opacity: 0.9;
+                font-family: var(--fonte-titulo);
+                font-size: .75rem;
+
+                cursor: pointer;
+                transition: 300ms;
+            }
+
+            a:hover, button:hover {
+                color: var(--tom-1);
+            }
+
+            a:active, button:active {
+                color: var(--cor-primaria);
             }
 
             @media (min-width: 1024px) {
@@ -59,6 +71,12 @@ export class Rodape extends LitElement {
                     border-radius: 2rem 2rem 0 0;
                     overflow: hidden;
                 }
+            }
+
+            button {
+                padding: 0;
+                border: 0;
+                background: transparent;
             }
         `
     ];
@@ -70,8 +88,8 @@ export class Rodape extends LitElement {
 
             </app-logo>
             <nav>
-                <a href="">Unidades</a>
-                <a href="">Contato</a>
+                <button>Unidades</button>
+                <button @click=${nav.rolarPara}>Contato</button>
                 <a href="servicos">Serviços</a>
                 <a href="a-barberia">A Barbearia</a>
                 <a href="-">Home</a>

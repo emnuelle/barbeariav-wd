@@ -44,7 +44,7 @@ export class MenuSection extends LitElement {
         background-color: white;
       }
 
-      a {
+      a, button {
         /* layout */
         display: flex;
         padding: 10px 0px;
@@ -81,9 +81,18 @@ export class MenuSection extends LitElement {
       feather-icon {
         display: flex;
         width: 24px;
-        fill: white;
+        fill: currentColor;
         color: white;
       }
+
+      a:hover, button:hover {
+       color: var(--tom-1);
+       }
+
+      a:active, button:active {
+       color: var(--cor-primaria);
+      }
+
     `,
   ];
 
@@ -95,9 +104,9 @@ export class MenuSection extends LitElement {
 
         <nav>
 
-          <a href="">Unidades <feather-icon icon="map-pin"></feather-icon></a>
+          <button >Unidades <feather-icon icon="map-pin"></feather-icon></button>
 
-          <a href="">Contato <feather-icon icon="phone"></feather-icon></a>
+          <button >Contato <feather-icon icon="phone"></feather-icon></button>
 
           <a href="servicos">Serviços <feather-icon icon="scissors"></feather-icon></a>
 

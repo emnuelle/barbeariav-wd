@@ -16,7 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 export const nav = {
   abrir: function () {
+    navbar.classList.add("escondido");
     dialog.showModal()
+  },
+  rolarPara: function () {
+    document.querySelector('home-page').shadowRoot.querySelector('#contato').scrollIntoView()
   }, 
   fechar: function () {
     dialog.close()

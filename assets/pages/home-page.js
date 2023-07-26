@@ -11,9 +11,9 @@ export class homePage extends LitElement {
 
             <servicos-section></servicos-section>
 
-            <contato-section></contato-section>
+            <contato-section id="contato"></contato-section>
 
-            <unidades-section></unidades-section>  
+            <unidades-section id="unidades"></unidades-section>  
 
         `;
     }
