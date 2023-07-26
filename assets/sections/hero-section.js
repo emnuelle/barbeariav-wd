@@ -33,6 +33,7 @@ export class HeroSection extends LitElement {
                 position: absolute;
                 right: -72px;
                 top: -39px;
+                z-index: 10;
             }
 
             img {
