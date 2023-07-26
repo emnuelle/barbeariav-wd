@@ -81,6 +81,14 @@ export class Rodape extends LitElement {
         `
     ];
 
+    rolarContato() {
+        return nav.rolarPara('#contato')
+    }
+
+    rolarUnidades() {
+        return nav.rolarPara('#unidades')
+    }
+
     render() {
         return html`
         <footer>
@@ -88,11 +96,11 @@ export class Rodape extends LitElement {
 
             </app-logo>
             <nav>
-                <button>Unidades</button>
-                <button @click=${nav.rolarPara}>Contato</button>
+                <button @click=${this.rolarUnidades}>Unidades</button>
+                <button @click=${this.rolarContato}>Contato</button>
                 <a href="servicos">Serviços</a>
-                <a href="a-barberia">A Barbearia</a>
-                <a href="-">Home</a>
+                <a href="a-barbearia">A Barbearia</a>
+                <a href="/">Home</a>
             </nav>
         </footer>
         <span>

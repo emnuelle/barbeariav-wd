@@ -1,3 +1,4 @@
+import { Router } from '@vaadin/router';
 import './assets'
 import { initRouter } from './assets/router';
 
@@ -19,13 +20,19 @@ export const nav = {
     navbar.classList.add("escondido");
     dialog.showModal()
   },
-  rolarPara: function () {
-    document.querySelector('home-page').shadowRoot.querySelector('#contato').scrollIntoView()
+  rolarPara: function (secao) {
+    Router.go("/");
+    router.ready.then(() => {
+      document.querySelector('home-page')
+      .shadowRoot.querySelector(secao)
+      .scrollIntoView();
+    });
   }, 
   fechar: function () {
     dialog.close()
   },
 }
+
 
 /* Navbar dinâmica ao scroll */
 let prevScrollpos = window.pageYOffset;

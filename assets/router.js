@@ -10,9 +10,9 @@ export function initRouter() {
             action: () => import("./pages/home-page") 
         },
         {
-            path:"",
-            component: "/a-barbearia",
-            action: () => import("./pages/a-barbearia-page.js") 
+            path:"/a-barbearia",
+            component: "a-barbearia-page",
+            action: () => import("./pages/a-barbearia-page") 
         },
     ])
     
