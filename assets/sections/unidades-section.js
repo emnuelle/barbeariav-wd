@@ -8,7 +8,7 @@ export class UnidadesSection extends LitElement {
             :host {
                 height: fit-content;
                 gap: 32px;
-                padding-bottom: 4rem;
+                padding: 0 0 4rem 0;
             }
 
             app-paragrafo {
@@ -28,6 +28,23 @@ export class UnidadesSection extends LitElement {
                 position: absolute;
                 left: -64px;
                 top: -56px;
+            }
+
+            swiper-container {
+                width: 100%;
+                height: 360px;
+            }
+
+            swiper-slide {
+                padding-top: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: transform 500ms;
+            }
+
+            .swiper-slide-active {
+                transform: scale(1.1);
             }
 
             @media (min-width: 768px) {
@@ -56,7 +73,43 @@ export class UnidadesSection extends LitElement {
             Confira os horários específicos de cada unidade.
         </app-paragrafo>
 
-        <app-mapa></app-mapa>
+        <swiper-container
+        space-between="80"
+        >
+
+                <swiper-slide>
+                    <app-mapa>
+
+                    </app-mapa>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <app-mapa>
+                        
+                    </app-mapa>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <app-mapa>
+                        
+                    </app-mapa>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <app-mapa>
+                        
+                    </app-mapa>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <app-mapa>
+                        
+                    </app-mapa>
+                </swiper-slide>
+
+        </swiper-container>
+
+        
 
         <app-bolinhas formato="metade"></app-bolinhas>
 
