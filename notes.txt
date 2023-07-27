@@ -38,3 +38,6 @@
   <swiper-slide>Slide 3</swiper-slide>
   <swiper-slide>Slide 4</swiper-slide>
 </swiper-container>
+
+https://swiperjs.com/demos
+

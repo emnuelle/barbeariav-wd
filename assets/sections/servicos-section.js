@@ -73,11 +73,30 @@ export class ServicosSection extends LitElement {
                 height: 120%;
             } 
 
+            img:first-child{
+                width: 115%;
+            }
+
             app-quadro {
                 width: 298px;
                 height: 364px;
                 border-top-left-radius: 0;
                 border-bottom-left-radius: 0;
+            }
+
+            swiper-container {
+                width: 100%;
+                height: 100%;
+            }
+
+            swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            img {
+                height: 100%;
             }
 
             @media (min-width: 768px) {
@@ -111,6 +130,7 @@ export class ServicosSection extends LitElement {
                 aside {
                     padding: 176px 0px 16px 0px;   
                 }
+                
             }
 
             @media (min-width:1024px) {
@@ -128,14 +148,49 @@ export class ServicosSection extends LitElement {
 
         <section>
 
-            <app-quadro> <img loading="lazy" src="../../public/servicos-1.jpg" alt="cortando o cabelo"> </app-quadro>
+            <app-quadro> 
+
+                <swiper-container 
+
+                effect="fade"
+                simulate-touch="false"
+                autoplay="true"
+                disabled-on-interaction="false"
+                loop="true"
+                speed="750"
+                >
+
+                        <swiper-slide>
+                            <img 
+                                class="primeira-imagem"
+                                loading="lazy" 
+                                src="../../public/servicos-1.jpg" 
+                                alt="cortando o cabelo"
+                            /> 
+                        </swiper-slide>
+
+                        <swiper-slide>
+                                <img loading="lazy" 
+                                src="../../public/servicos-2.jpg" 
+                                alt="cortando o cabelo"
+                                /> 
+                        </swiper-slide>
+
+                </swiper-container>
+
+            </app-quadro>
 
             <aside>
+
                 <article>
+
                     <app-paragrafo  >Corte</app-paragrafo>
                     <app-paragrafo class="descricao" >Social, degradê, surfista, militar, razor part, undercut</app-paragrafo> 
+                
                 </article>
+                
                 <app-botao><a href="serviços"> Ver mais </a></app-botao>
+            
             </aside>
 
         </section>

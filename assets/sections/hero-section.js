@@ -50,6 +50,10 @@ export class HeroSection extends LitElement {
                 height: 100%;
             }
 
+            app-quadro {
+                background-color: transparent;
+            }
+
             @media (min-width: 760px) {
                 app-logo {
                     width: 220px;
@@ -77,7 +81,20 @@ export class HeroSection extends LitElement {
             </app-titulo>
 
             <app-quadro>
-            <swiper-container loop="true">
+            <swiper-container 
+            loop="true" 
+            autoplay="true" 
+            speed="500"
+            disable-on-interaction="false"
+            effect="coverflow" 
+            simulate-touch="false" 
+            centered-slides="true"
+            overflow-effect-rotate="50" 
+            coverflow-effect-stretch="0" 
+            coverflow-effect-depth="100"
+            coverflow-effect-modifier="1" 
+            coverflow-effect-slide-shadows="true"
+            >
                 <swiper-slide>
                     <img loading="lazy" src="../../public/slider-1.jpg" alt="Imagem slider 1"/>
                 </swiper-slide>
