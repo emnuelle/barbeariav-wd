@@ -74,36 +74,43 @@ export class UnidadesSection extends LitElement {
         </app-paragrafo>
 
         <swiper-container
-        space-between="80"
+        space-between="-75"
+        initial-slide="1"
         >
-
+        
                 <swiper-slide>
                     <app-mapa>
-
+                    <img slot="imagem"
+                         loading="lazy"
+                          src="../../public/mapa-1.png"
+                           alt="unidades"/>
                     </app-mapa>
                 </swiper-slide>
 
                 <swiper-slide>
                     <app-mapa>
-                        
+                        <img slot="imagem"
+                         loading="lazy"
+                          src="../../public/mapa-2.jpg"
+                           alt="unidades"/>
                     </app-mapa>
                 </swiper-slide>
 
                 <swiper-slide>
                     <app-mapa>
-                        
+                        <img slot="imagem"
+                         loading="lazy"
+                          src="../../public/mapa-3.jpg"
+                           alt="unidades"/>
                     </app-mapa>
                 </swiper-slide>
 
                 <swiper-slide>
                     <app-mapa>
-                        
-                    </app-mapa>
-                </swiper-slide>
-
-                <swiper-slide>
-                    <app-mapa>
-                        
+                        <img slot="imagem"
+                         loading="lazy"
+                          src="../../public/mapa-4.jpg"
+                           alt="unidades"/>
                     </app-mapa>
                 </swiper-slide>
 
