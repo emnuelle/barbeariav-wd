@@ -117,7 +117,7 @@ export class UnidadesSection extends LitElement {
                     <app-mapa>
                     <img slot="imagem"
                          loading="lazy"
-                          src="../../public/mapa-1.png"
+                          src="mapa-1.png"
                            alt="unidades"/>
                     </app-mapa>
                 </swiper-slide>
@@ -126,7 +126,7 @@ export class UnidadesSection extends LitElement {
                     <app-mapa>
                         <img slot="imagem"
                          loading="lazy"
-                          src="../../public/mapa-2.jpg"
+                          src="mapa-2.jpg"
                            alt="unidades"/>
                     </app-mapa>
                 </swiper-slide>
@@ -135,7 +135,7 @@ export class UnidadesSection extends LitElement {
                     <app-mapa>
                         <img slot="imagem"
                          loading="lazy"
-                          src="../../public/mapa-3.jpg"
+                          src="mapa-3.jpg"
                            alt="unidades"/>
                     </app-mapa>
                 </swiper-slide>
@@ -144,7 +144,7 @@ export class UnidadesSection extends LitElement {
                     <app-mapa>
                         <img slot="imagem"
                          loading="lazy"
-                          src="../../public/mapa-4.jpg"
+                          src="mapa-4.jpg"
                            alt="unidades"/>
                     </app-mapa>
                 </swiper-slide>

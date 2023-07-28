@@ -68,7 +68,11 @@ export class ContatoSectioon extends LitElement {
       <app-titulo> Entre em contato conosco</app-titulo>
 
       <app-quadro>
-        <img loading="lazy" src="../../public/thumb-contato.png.png" alt="contato-thumb" />
+        <video 
+          data-src="video-contato.webm" 
+          poster="thumb-contato.webp" 
+          autoplay muted lopp>
+        </video>
       </app-quadro>
 
       <div>

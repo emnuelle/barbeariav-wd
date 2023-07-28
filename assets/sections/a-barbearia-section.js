@@ -141,7 +141,7 @@ export class ABarbeariaSection extends LitElement {
         return html`
             <app-titulo>A Barbearia</app-titulo>
             <app-bolinhas formato="inteira"></app-bolinhas>
-            <app-quadro> <img loading="lazy" src="../../public/a-barbearia.jpg" alt="a barbearia"> </app-quadro>
+            <app-quadro> <img loading="lazy" src="a-barbearia.jpg" alt="a barbearia"> </app-quadro>
             <article>            
                 <app-paragrafo>Bem-vindo à Barbearia Vanguarda, onde tradição e inovação se encontram para proporcionar cortes de cabelo e barbas impecáveis. Com uma equipe de barbeiros especializados, combinamos técnicas tradicionais com as últimas tendências, garantindo um atendimento personalizado em um ambiente acolhedor.</app-paragrafo>
                 <app-botao><a>Leia Mais</a></app-botao>

@@ -96,13 +96,13 @@ export class HeroSection extends LitElement {
             coverflow-effect-slide-shadows="true"
             >
                 <swiper-slide>
-                    <img loading="lazy" src="../../public/slider-1.jpg" alt="Imagem slider 1"/>
+                    <img src="slider-1.jpg" alt="Imagem slider 1"/>
                 </swiper-slide>
                 <swiper-slide>
-                    <img loading="lazy" src="../../public/slider-2.jpg" alt="Imagem slider 1"/>
+                    <img src="slider-2.jpg" alt="Imagem slider 1"/>
                 </swiper-slide>
                 <swiper-slide>
-                    <img loading="lazy" src="../../public/slider-3.jpg" alt="Imagem slider 1"/>
+                    <img src="slider-3.jpg" alt="Imagem slider 1"/>
                 </swiper-slide>
             </swiper-container>
             </app-quadro>

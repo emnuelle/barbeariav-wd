@@ -1,11 +1,14 @@
 {
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "prepreview": "npm run build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@vaadin/router": "^1.7.5",
-    "lit": "^2.7.6"
+    "lit": "^2.7.6",
+    "lozad": "^1.16.0"
   },
   "devDependencies": {
     "@types/node": "^20.4.0",

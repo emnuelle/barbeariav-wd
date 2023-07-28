@@ -164,14 +164,14 @@ export class ServicosSection extends LitElement {
                             <img 
                                 class="primeira-imagem"
                                 loading="lazy" 
-                                src="../../public/servicos-1.jpg" 
+                                src="servicos-1.jpg" 
                                 alt="cortando o cabelo"
                             /> 
                         </swiper-slide>
 
                         <swiper-slide>
                                 <img loading="lazy" 
-                                src="../../public/servicos-2.jpg" 
+                                src="servicos-2.jpg" 
                                 alt="cortando o cabelo"
                                 /> 
                         </swiper-slide>
