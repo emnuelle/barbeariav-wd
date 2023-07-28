@@ -31,8 +31,13 @@ export class UnidadesSection extends LitElement {
             }
 
             swiper-container {
-                width: 100%;
-                height: 360px;
+                width: 100svw;
+                height: 300px;
+
+                /* centralizar a div */
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
             }
 
             swiper-slide {
@@ -58,11 +63,42 @@ export class UnidadesSection extends LitElement {
                     width: 400px;
                     height: 300px;
                 }
+
+                swiper-container {
+                    height: 400px;
+                }
             }
 
 
         `
     ];
+
+    firstUpdated() {
+        const swiper = this.renderRoot.querySelector('swiper-container')
+
+        console.log(swiper)
+
+        Object.assign(swiper, {
+            spaceBetween: -75,
+            initialSlide: 1,
+            rewind: true,
+            breakpoints: {
+                768: {
+                    spaceBetween: -275,
+                },
+                1024: {
+                    spaceBetween: -575,
+                },
+                1368: {
+                    spaceBetween: 0,
+                    slidesPerView: 3,
+                    
+                },
+            }
+        })
+        
+        swiper.initialize()
+    }
 
     render() {
         return html `
@@ -74,10 +110,9 @@ export class UnidadesSection extends LitElement {
         </app-paragrafo>
 
         <swiper-container
-        space-between="-75"
-        initial-slide="1"
+        init="false"
         >
-        
+
                 <swiper-slide>
                     <app-mapa>
                     <img slot="imagem"
