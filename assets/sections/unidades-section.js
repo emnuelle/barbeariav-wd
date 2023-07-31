@@ -1,9 +1,10 @@
 import { LitElement, html, css } from 'lit';
+import { animate } from '../styles/animate-style';
 import { section } from '../styles/section-style';
 
 export class UnidadesSection extends LitElement {
     static styles = [
-        section,
+        section, animate,
         css`
             :host {
                 height: fit-content;
@@ -103,7 +104,7 @@ export class UnidadesSection extends LitElement {
     render() {
         return html `
         
-        <app-paragrafo>
+        <app-paragrafo class="titulo animate__animated" data-toggle-class="animate__fadeInUp">
             Nossa sede, localizada na zona leste de São Paulo, 
             e as demais unidades, estão abertas todos os dias. <br> <br>
             Confira os horários específicos de cada unidade.

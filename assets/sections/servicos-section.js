@@ -145,14 +145,14 @@ export class ServicosSection extends LitElement {
 
     render() {
         return html`
-        <app-paragrafo class="titulo animate__animated" data-toggle-class="animate__fadeIn">
+        <app-paragrafo class="titulo animate__animated animate__delay-1s" data-toggle-class="animate__fadeInUp">
             Estilo, cuidado e excelência em cada 
             <span> corte </span>
         </app-paragrafo>
 
         <section>
 
-            <app-quadro> 
+            <app-quadro class="animate__animated" data-toglle-class="animate__fadeInLeft"> 
 
                 <swiper-container 
 
@@ -184,7 +184,7 @@ export class ServicosSection extends LitElement {
 
             </app-quadro>
 
-            <aside>
+            <aside class="animate__animated animate__delay-1s">
 
                 <article>
 

@@ -1,10 +1,15 @@
 import { LitElement, html, css } from 'lit';
+import { animate } from '../styles/animate-style';
 import { section } from '../styles/section-style';
 
 export class HeroSection extends LitElement {
     static styles = [
-        section,
+        section, animate,
         css`
+            :host {
+                --animate-delay: 300ms;
+            }
+
             section {
                 display: flex;
                 flex-direction: column;
@@ -13,6 +18,10 @@ export class HeroSection extends LitElement {
             }
 
             span {
+                display: inline-block;
+            }
+
+            .vanguarda {
                 color: var(--tom-3);
                 font-weight: 900;
             }
@@ -54,6 +63,16 @@ export class HeroSection extends LitElement {
                 background-color: transparent;
             }
 
+            @keyframes slideInUp {
+            0% {
+                transform: translate3d(0px, 200%, 0px);
+                visibility: visible;
+            }
+            100% {
+                transform: translate(0px);
+            }
+            }
+
             @media (min-width: 760px) {
                 app-logo {
                     width: 220px;
@@ -75,8 +94,11 @@ export class HeroSection extends LitElement {
         return html`
         <section>
 
-            <app-titulo> 
-                <h1>Barbearia <span> Vanguarda </span> </h1> 
+            <app-titulo class="animate__animated" data-toggle-class="animate__slideInUp"> 
+                <h1>
+                    <span> Barbearia </span>
+                    <span class="vanguarda"> Vanguarda </span> 
+                </h1> 
                 <app-logo></app-logo>
             </app-titulo>
 
@@ -109,7 +131,7 @@ export class HeroSection extends LitElement {
 
         </section>
 
-        <app-paragrafo>
+        <app-paragrafo  class="animate__animated animated__delay-2s" data-toggle-class="animate__fadeInUp">
             Obtenha um estilo impecável, do cabelo à barba.
         </app-paragrafo>
 
