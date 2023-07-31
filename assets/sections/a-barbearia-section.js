@@ -1,9 +1,10 @@
 import { LitElement, html, css } from 'lit';
+import { animate } from '../styles/animate-style'; 
 import { section } from '../styles/section-style';
 
 export class ABarbeariaSection extends LitElement {
     static styles = [ 
-        section, 
+        section, animate,
         css`
             :host {
                 justify-content: space-between;
@@ -139,10 +140,14 @@ export class ABarbeariaSection extends LitElement {
 
     render() {
         return html`
-            <app-titulo>A Barbearia</app-titulo>
+            <app-titulo class="animate__animated animate__slower" data-toggle-class="animate__fadeInUp">A Barbearia</app-titulo>
             <app-bolinhas formato="inteira"></app-bolinhas>
-            <app-quadro> <img loading="lazy" src="a-barbearia.jpg" alt="a barbearia"> </app-quadro>
-            <article>            
+            <app-quadro class="animate__animated" data-toggle-class="animate__slideInRight"> 
+                <img loading="lazy" 
+                src="a-barbearia.jpg" 
+                alt="a barbearia"> 
+            </app-quadro>
+            <article class="animate__animated" data-toggle-class="animate__fadeInLeft">            
                 <app-paragrafo>Bem-vindo à Barbearia Vanguarda, onde tradição e inovação se encontram para proporcionar cortes de cabelo e barbas impecáveis. Com uma equipe de barbeiros especializados, combinamos técnicas tradicionais com as últimas tendências, garantindo um atendimento personalizado em um ambiente acolhedor.</app-paragrafo>
                 <app-botao><a>Leia Mais</a></app-botao>
             </article>

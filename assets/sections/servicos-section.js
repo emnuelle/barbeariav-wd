@@ -1,9 +1,10 @@
 import { LitElement, html, css } from 'lit';
 import { section } from '../styles/section-style';
+import { animate } from '../styles/animate-style';
 
 export class ServicosSection extends LitElement {
     static styles = [
-        section,
+        section, animate,
         css`
 
             app-bolinhas {
@@ -144,7 +145,10 @@ export class ServicosSection extends LitElement {
 
     render() {
         return html`
-        <app-paragrafo class="titulo" >Estilo, cuidado e excelência em cada <span> corte</span></app-paragrafo>
+        <app-paragrafo class="titulo animate__animated" data-toggle-class="animate__fadeIn">
+            Estilo, cuidado e excelência em cada 
+            <span> corte </span>
+        </app-paragrafo>
 
         <section>
 

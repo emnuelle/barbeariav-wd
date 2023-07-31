@@ -10,6 +10,10 @@ export class ContatoSectioon extends LitElement {
         gap: 0;
       }
 
+      video {
+        height: 100%;
+      }
+
       img {
         height: 100%;
       }
